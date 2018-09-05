@@ -12,6 +12,11 @@
 		0832ACA0212D853D00702958 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0832AC9E212D853D00702958 /* Main.storyboard */; };
 		0832ACA2212D854600702958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0832ACA1212D854600702958 /* Assets.xcassets */; };
 		0832ACA5212D854600702958 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0832ACA3212D854600702958 /* LaunchScreen.storyboard */; };
+		083D8DB6213DAE4A00C8E8BE /* meetupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083D8DB5213DAE4A00C8E8BE /* meetupTableViewCell.swift */; };
+		083D8DB8213DB4D900C8E8BE /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083D8DB7213DB4D900C8E8BE /* Event.swift */; };
+		0887BD47213024B60025AFB6 /* placeSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0887BD46213024B60025AFB6 /* placeSearchResult.swift */; };
+		08A3ACB5213D56FE00349E9D /* meetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A3ACB4213D56FE00349E9D /* meetupViewController.swift */; };
+		47AAA3B318CF4F00FD0AFA18 /* Pods_locationAndJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8547C461A14408A539451A8D /* Pods_locationAndJSON.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,13 @@
 		0832ACA1212D854600702958 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0832ACA4212D854600702958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0832ACA6212D854600702958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		083D8DB5213DAE4A00C8E8BE /* meetupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meetupTableViewCell.swift; sourceTree = "<group>"; };
+		083D8DB7213DB4D900C8E8BE /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		0887BD46213024B60025AFB6 /* placeSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placeSearchResult.swift; sourceTree = "<group>"; };
+		08A3ACB4213D56FE00349E9D /* meetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meetupViewController.swift; sourceTree = "<group>"; };
+		78F76F10E8D726E77A0841CE /* Pods-locationAndJSON.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-locationAndJSON.release.xcconfig"; path = "Pods/Target Support Files/Pods-locationAndJSON/Pods-locationAndJSON.release.xcconfig"; sourceTree = "<group>"; };
+		8547C461A14408A539451A8D /* Pods_locationAndJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_locationAndJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC852C7A02A8672733D77F28 /* Pods-locationAndJSON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-locationAndJSON.debug.xcconfig"; path = "Pods/Target Support Files/Pods-locationAndJSON/Pods-locationAndJSON.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47AAA3B318CF4F00FD0AFA18 /* Pods_locationAndJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		055951FA571D72DE669870DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8547C461A14408A539451A8D /* Pods_locationAndJSON.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0832AC8E212D853D00702958 = {
 			isa = PBXGroup;
 			children = (
 				0832AC99212D853D00702958 /* locationAndJSON */,
 				0832AC98212D853D00702958 /* Products */,
+				B6321DE219AD9280330E1F14 /* Pods */,
+				055951FA571D72DE669870DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +79,25 @@
 			children = (
 				0832AC9A212D853D00702958 /* AppDelegate.swift */,
 				0832AC9C212D853D00702958 /* ViewController.swift */,
+				0887BD46213024B60025AFB6 /* placeSearchResult.swift */,
+				08A3ACB4213D56FE00349E9D /* meetupViewController.swift */,
+				083D8DB7213DB4D900C8E8BE /* Event.swift */,
 				0832AC9E212D853D00702958 /* Main.storyboard */,
+				083D8DB5213DAE4A00C8E8BE /* meetupTableViewCell.swift */,
 				0832ACA1212D854600702958 /* Assets.xcassets */,
 				0832ACA3212D854600702958 /* LaunchScreen.storyboard */,
 				0832ACA6212D854600702958 /* Info.plist */,
 			);
 			path = locationAndJSON;
+			sourceTree = "<group>";
+		};
+		B6321DE219AD9280330E1F14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC852C7A02A8672733D77F28 /* Pods-locationAndJSON.debug.xcconfig */,
+				78F76F10E8D726E77A0841CE /* Pods-locationAndJSON.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0832ACA9212D854600702958 /* Build configuration list for PBXNativeTarget "locationAndJSON" */;
 			buildPhases = (
+				5D63F0BBEE271B3D8775AA11 /* [CP] Check Pods Manifest.lock */,
 				0832AC93212D853D00702958 /* Sources */,
 				0832AC94212D853D00702958 /* Frameworks */,
 				0832AC95212D853D00702958 /* Resources */,
+				7561D1AFD554A5D09BFC89FA /* [CP] Copy Pods Resources */,
+				751D1D8E08C06D4E29656122 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +169,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5D63F0BBEE271B3D8775AA11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-locationAndJSON-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		751D1D8E08C06D4E29656122 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-locationAndJSON/Pods-locationAndJSON-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-locationAndJSON/Pods-locationAndJSON-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7561D1AFD554A5D09BFC89FA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-locationAndJSON/Pods-locationAndJSON-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-locationAndJSON/Pods-locationAndJSON-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0832AC93212D853D00702958 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0832AC9D212D853D00702958 /* ViewController.swift in Sources */,
+				0887BD47213024B60025AFB6 /* placeSearchResult.swift in Sources */,
+				083D8DB6213DAE4A00C8E8BE /* meetupTableViewCell.swift in Sources */,
 				0832AC9B212D853D00702958 /* AppDelegate.swift in Sources */,
+				083D8DB8213DB4D900C8E8BE /* Event.swift in Sources */,
+				08A3ACB5213D56FE00349E9D /* meetupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,9 +382,11 @@
 		};
 		0832ACAA212D854600702958 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC852C7A02A8672733D77F28 /* Pods-locationAndJSON.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BVY7P9CUB8;
 				INFOPLIST_FILE = locationAndJSON/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -295,9 +401,11 @@
 		};
 		0832ACAB212D854600702958 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78F76F10E8D726E77A0841CE /* Pods-locationAndJSON.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BVY7P9CUB8;
 				INFOPLIST_FILE = locationAndJSON/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

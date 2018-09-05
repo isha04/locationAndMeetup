@@ -2,11 +2,12 @@
 //  AppDelegate.swift
 //  locationAndJSON
 //
-//  Created by Amarjeet on 8/22/18.
-//  Copyright © 2018 Amarjeet. All rights reserved.
+//  Created by isha on 8/22/18.
+//  Copyright © 2018 isha. All rights reserved.
 //
 
 import UIKit
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        GMSServices.provideAPIKey("AIzaSyCZQTtvVEqPB4TFofXccQgfYrFrSBsS07g")
         return true
     }
 
