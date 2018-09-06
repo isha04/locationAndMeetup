@@ -1,7 +1,7 @@
-This a an app that I worked on to:
-1) Explore location frameworks such as MapKit, CoreLocation and GoogleMaps 
+This is an app that I worked on to explore the following:
+1) Location frameworks such as MapKit, CoreLocation and GoogleMaps 
 2) Searching within Apple's map
-3) Explore Networking by using AlamoFire to hit meetup.com API
+3) Networking by using AlamoFire to hit meetup.com API
 
 In this app a user can search for a place, and see driving directions in either AppleMap or GoogleMap. Secondly, the user can also see meetups happening within 25 mile radius of his/her current location.
 
